@@ -1,0 +1,35 @@
+create database school;
+
+use school;
+
+create table player(Player_ID Integer Primary Key , Name Varchar(50), GS integer, YC integer, RC integer, Team varchar(50));
+
+insert into player values(1001, 'Aishani Mittal', 0,0,0, 'FAS_United');
+insert into player values(1002, 'Samarth Alambain' , 3,0,0, 'FAS_Madrid');
+insert into player values(1003, 'Mayank Kumar' ,2,0,0, 'FAS_Madrid');
+insert into player values(1004, 'Divyansh Seth', 0,1,0, 'FAS_Madrid');
+insert into player values(1005, 'Anushka Ranjan', 2,5,1, 'FAS_Madrid');
+insert into player values(1006, 'Ansh Kumar Singh', 1,1,0, 'FAS_Madrid');
+insert into player values(1007, 'Niyati Suman' , 4,2,1, 'FAS_Madrid');
+insert into player values(1008, 'Arnav Chaudary' , 3,1,1, 'FAS_Madrid');
+insert into player values(1009, 'Ishan Bhatt', 6,1,0 , 'FAS_United');
+insert into player values(1010, 'Pawani Srivastava', 2,1,0 , 'FAS_United');
+insert into player values(1011, 'Somil Sharma' , 0,1,0,   'FAS_United');
+insert into player values(1012, 'Harsh Kumar' ,1,0,0, 'FAS_United');
+insert into player values(1013, 'Sarthak Gupta' , 0,8,1,  'FAS_United');
+insert into player values(1014, 'Ishaan Avasthi'  , 0,2,1,  'FAS_United');
+insert into player values(1015, 'Kabir Aggrawal' , 1,1,0, 'FAS_United');
+insert into player values(1016, 'Arjun Mehelwal' , 3,0,0 , 'FAS_United');
+insert into player values(1017, 'Imran Iqbal' , 2,1,2 , 'FAS_United');
+insert into player values(1018, 'Anshuman Puri', 2,0,0, 'FAS_United');
+insert into player values(1019, 'Fawad khan' , 0,1,0, 'FAS_United');
+insert into player values(1020, 'Tanisha Chawla' , 2,0,1, 'FAS_United');
+
+create table matches( Date_Play date primary key, FAS_United integer, FAS_Madrid integer, Winner varchar(20));
+
+insert into matches values('2022-05-07',1,2,"FAS_Madrid");
+insert into matches values("2022-10-10",2,1, "FAS_United");
+insert into matches values ('2001-09-11' , 2,2, 'Draw');
+
+select * from player;
+select * from matches;
